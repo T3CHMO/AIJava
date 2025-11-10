@@ -4,7 +4,7 @@ spring:
       chat: azure-openai   # enables Azure OpenAI chat model
     azure:
       openai:
-        endpoint: # e.g. https://<resource>.openai.azure.com/
+        endpoint: https://<resource>.openai.azure.com/ # your Azure OpenAI resource endpoint
         api-key: YOUR_AZURE_OPENAI_API_KEY  # your Azure OpenAI API key
         chat:
           options:
