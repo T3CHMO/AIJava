@@ -1,0 +1,26 @@
+spring:
+  ai:
+    model:
+      chat: azure-openai   # enables Azure OpenAI chat model
+    azure:
+      openai:
+        endpoint: # e.g. https://<resource>.openai.azure.com/
+        api-key: YOUR_AZURE_OPENAI_API_KEY  # your Azure OpenAI API key
+        chat:
+          options:
+            deployment-name: gpt-5-mini # your GPT deployment name
+            temperature: 1.0 # Only value supported by this model
+
+app:
+  prompt:
+    template: |
+      You are a service that emits ONLY strict JSON in the exact format below.
+      No code fences, no extra keys, no explanations.
+
+      Format:
+      {format}
+
+      Task:
+      Produce a weather report for city "{city}".
+    city: Prague
+

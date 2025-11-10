@@ -1,0 +1,23 @@
+# Gradle
+.gradle/
+/Validation/build/
+!gradle/wrapper/gradle-wrapper.jar
+/build
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Java
+*.class
+
+# Other
+*.swp
+*.swo
